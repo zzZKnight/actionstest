@@ -16,4 +16,4 @@ jobs:
           -H "content-type: application/json" \
           -H "authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
           https://api.github.com/repos/${{ github.repository }}/issues \
-          -d '{"title": "issue for commit: ${{ github.sha }}","body": "This issue **${{ github.workflow }}**. \n\n 提交的散列为：_${{ github.sha }}_.”}'
+          -d '{"title": "issue for commit: ${{ github.sha }}","body": "This issue **${{ github.workflow }}**. \n\n 提交的散列为：_${{ github.sha }}_."}'
